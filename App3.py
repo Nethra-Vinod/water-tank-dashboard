@@ -61,3 +61,4 @@ if __name__ == "__main__":
     print("ESP32 Mapping: LOW WATER -> 10% (EMPTY), WATER OK -> 95% (FULL)")
     
     app.run(host="0.0.0.0", port=5000, debug=True)
+

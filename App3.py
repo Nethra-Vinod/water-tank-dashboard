@@ -19,7 +19,7 @@ STATUS_TO_PERCENTAGE = {
 # DASHBOARD
 @app.route("/", methods=["GET"])
 def dashboard():
-    return render_template("index4_final.html")
+    return render_template("index.html")
 
 # ESP32 POSTS DATA HERE
 @app.route("/update", methods=["POST"])
@@ -61,4 +61,5 @@ if __name__ == "__main__":
     print("ESP32 Mapping: LOW WATER -> 10% (EMPTY), WATER OK -> 95% (FULL)")
     
     app.run(host="0.0.0.0", port=5000, debug=True)
+
 
